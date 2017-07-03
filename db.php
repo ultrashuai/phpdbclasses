@@ -32,7 +32,7 @@
 		private $allowedFunctions = array('date_format','date_add','month','year','coalesce');
 		
 		function __construct ($user='sqlsel',$db='newwest') {
-			$this->server = ($_SERVER['SERVER_NAME']=='localhost') ? 'localhost:666' : 'localhost';
+			$this->server = ($_SERVER['SERVER_NAME']=='localhost') ? 'localhost' : 'localhost';
 			
 /* REPLACE WITH YOUR DB NAME AND USER PREFIX (FOR SHARED HOSTING) */
 			$this->dbname = '';
