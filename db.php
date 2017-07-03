@@ -29,7 +29,7 @@
 			'sqlins'=>array('select','show','describe','update','insert','delete')
 		);
 		
-		private $allowedFunctions = array('date_format','date_add','month','year','coalesce');
+		private $allowedFunctions = array('date_format','date_add','month','year','coalesce','concat');
 		
 		function __construct ($user='sqlsel',$db='newwest') {
 			$this->server = ($_SERVER['SERVER_NAME']=='localhost') ? 'localhost:666' : 'localhost';
