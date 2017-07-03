@@ -54,7 +54,6 @@
 			//$this->conn = mysqli_connect($this->server,$this->userPrefix.$this->user,$pass);
 			if ($this->conn===false) {
 				$this->conn = new mysqli($this->server, $this->userPrefix.$this->user, $pass);
-				//$this->conn = mysqli_connect($this->server,$this->userPrefix.$this->user,$pass);
 				if ($this->conn===false) $this->dbError();
 			}
 			mysqli_select_db($this->conn, $this->dbname);
